@@ -63,4 +63,22 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Update="AllPhotos.xaml.cs">
+	    <DependentUpon>AllPhotos.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="SinglePhotoView.xaml.cs">
+	    <DependentUpon>SinglePhotoView.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="AllPhotos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SinglePhotoView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
